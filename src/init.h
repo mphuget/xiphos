@@ -3,7 +3,7 @@
   Copyright (C) 2018, 2019 Milos Tatarevic
 
   (With additions from Marc-Philippe Huget)
-
+  
   Xiphos is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -18,14 +18,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "init.h"
-#include "uci.h"
+#ifndef INIT_H
 
-int main(int argc, char **argv) {
-  
-  all_init();
+    #define INIT_H
 
-  uci();
+    void all_init();
 
-  return 0;
-}
+#endif

@@ -18,14 +18,29 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "init.h"
-#include "uci.h"
+#include "make.h"
+#include "pawn_eval.h"
+#include "search.h"
+#include "tables.h"
 
-int main(int argc, char **argv) {
+/* 
+    This function was initially in the main function but an init module seems to be better
+*/
+void all_init() {
+
+    //make.c
+    init_rook_c_flag_mask();
+
+    //bitboard.c
+    init_bitboards();
+
+    //pawn_eval.c
+    init_distance();
   
-  all_init();
+    //tables.c
+    init_pst();
+  
+    //search.c
+    init_lmr();
 
-  uci();
-
-  return 0;
 }
