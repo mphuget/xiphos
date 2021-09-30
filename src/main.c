@@ -18,11 +18,18 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <stdio.h>
+#include <stdlib.h>
+
 #include "init.h"
 #include "uci.h"
 #include "config.h"
 
+
 int main(int argc, char **argv) {
+
+  //clear the screen before printing out
+  system("clear");
 
   //get the number of cores on the current platform
   //if there is more than one, could consider some parallelism on tasks

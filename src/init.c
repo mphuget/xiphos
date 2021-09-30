@@ -28,6 +28,10 @@
 */
 void all_init() {
 
+    //@Note: do we really need to do this init before everything else?
+    //@Note: seems to be something classic, it could be included into the workflow for init
+    //@Note: bitboards
+    
     //make.c
     init_rook_c_flag_mask();
 

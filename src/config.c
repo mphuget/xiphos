@@ -58,7 +58,6 @@ void getNbCores() {
         }
   
         printf ("%ld of %ld processors online\n",nprocs, nprocs_max);
-        exit (EXIT_SUCCESS);
     #else
         fprintf(stderr, "Could not determine number of CPUs");
         exit (EXIT_FAILURE);
